@@ -1,0 +1,42 @@
+
+:root{
+    --primary-color:#00605f;
+    --secondary-color:#017479;
+    --text-dark:#0f172a;
+    --text-light:#94a3b8;
+    --white:#ffffff;
+    --max-width:1400px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "montserrat",sans-serif;
+
+    background:linear-gradient(to right,rgba(2,82,89,.9),
+    rgba(255,255,255,0)),
+     url("assets/bg.jpg");
+    background-position:center center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: var(--max-width);
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.nav__logo img{
+    max-width: 70px;
+}
